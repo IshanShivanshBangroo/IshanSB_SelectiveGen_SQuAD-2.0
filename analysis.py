@@ -87,7 +87,8 @@ def arrays(rows):
 def sorted_groups(scores,eligible):
     s=np.nan_to_num(np.asarray(scores,float),nan=-np.inf)
     idx=np.flatnonzero(eligible);idx=idx[np.argsort(-s[idx],kind='stable')]
-    cuts=np.r_[0,np.flatnonzero(np.diff(s[idx])!=0)+1,len(idx)]
+    v=s[idx]   # equal scores, including several missing (-inf) ones, stay in one tie group
+    cuts=np.r_[0,np.flatnonzero(v[1:]!=v[:-1])+1,len(idx)]
     return [idx[cuts[i]:cuts[i+1]] for i in range(len(cuts)-1)]
 
 def expected_release(scores,eligible,k):

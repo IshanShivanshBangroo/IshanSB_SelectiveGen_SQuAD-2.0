@@ -16,6 +16,8 @@ This repository accompanies my tutorial on when an LLM application should answer
 
 The default run recomputes the analysis from the saved model outputs on a CPU. It does not query a model or require a GPU. The results are already displayed in the notebook for reading without execution. The original cache is also available as [results_cache.jsonl](results_cache.jsonl).
 
+The main table uses fixed 50% expected coverage and a token-F1 correctness threshold of 0.5. Changing either fixed replay value stops with an explanatory message. The risk-coverage curves show other release levels. `SEED` controls the bootstrap resampling; changing it does not change the saved model responses.
+
 A fresh model run is a separate option. It needs a suitable GPU, model and dataset downloads, and substantially more time than a classroom replay. Changing the model, prompts, precision, or software can change its outputs.
 
 ## Data and methods
@@ -38,7 +40,7 @@ The five gates select among the same fixed candidate answers. Their pooled compa
 | --- | ---: | ---: | ---: |
 | Forced-answer prompt | 99.8% | 55.6% | 0.0% |
 | Token probability gate | 50.0% | 46.0% | 39.0% |
-| Stated confidence gate | 50.0% | 38.9% | 31.0% |
+| Verbalized confidence gate | 50.0% | 38.9% | 31.0% |
 | Sample agreement gate | 50.0% | 40.8% | 33.1% |
 | Lexical cluster entropy gate | 50.0% | 40.7% | 33.0% |
 | Context-sufficiency self-check gate | 50.0% | 26.8% | 17.3% |
