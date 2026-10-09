@@ -1,0 +1,1150 @@
+{
+  "cache_sha256": "149f421f930223a53d163afa3186968bc8482497dfb0498e3af20b6e94cfae6a",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "seed": 597,
+  "bootstrap_resamples": 2000,
+  "bootstrap_unit": "question",
+  "no_new_inference": true,
+  "corrected": {
+    "mode": "number_guard",
+    "points": {
+      "Forced-answer prompt": {
+        "n_total": 400,
+        "expected_released": 399.0,
+        "expected_errors": 222.0,
+        "coverage": 0.9975,
+        "risk": 0.556390977443609,
+        "answerable_declined": 0.0,
+        "forced_correct_withheld": 0.0,
+        "risk_ci_question_bootstrap": [
+          0.5075,
+          0.6055276381909548
+        ]
+      },
+      "Token probability gate": {
+        "n_total": 400,
+        "expected_released": 200.0,
+        "expected_errors": 92.0,
+        "coverage": 0.5,
+        "risk": 0.46,
+        "answerable_declined": 0.43000000000000005,
+        "forced_correct_withheld": 0.38983050847457623,
+        "risk_ci_question_bootstrap": [
+          0.39,
+          0.53
+        ]
+      },
+      "Verbalized confidence gate": {
+        "n_total": 400,
+        "expected_released": 200.0,
+        "expected_errors": 77.81818181818181,
+        "coverage": 0.5,
+        "risk": 0.38909090909090904,
+        "answerable_declined": 0.33151515151515154,
+        "forced_correct_withheld": 0.3097072419106318,
+        "risk_ci_question_bootstrap": [
+          0.3209064907550077,
+          0.4540013513513514
+        ]
+      },
+      "Sample agreement gate": {
+        "n_total": 400,
+        "expected_released": 199.99999999999994,
+        "expected_errors": 81.5450643776824,
+        "coverage": 0.49999999999999983,
+        "risk": 0.4077253218884121,
+        "answerable_declined": 0.386266094420601,
+        "forced_correct_withheld": 0.33076307558012674,
+        "risk_ci_question_bootstrap": [
+          0.3445378151260505,
+          0.47086350437403507
+        ]
+      },
+      "Lexical cluster entropy gate": {
+        "n_total": 400,
+        "expected_released": 200.0,
+        "expected_errors": 81.38528138528139,
+        "coverage": 0.5,
+        "risk": 0.4069264069264069,
+        "answerable_declined": 0.3852813852813852,
+        "forced_correct_withheld": 0.3298603468094994,
+        "risk_ci_question_bootstrap": [
+          0.3430962343096234,
+          0.47058823529411764
+        ]
+      },
+      "Context-sufficiency self-check gate": {
+        "n_total": 400,
+        "expected_released": 200.0,
+        "expected_errors": 53.666666666666664,
+        "coverage": 0.5,
+        "risk": 0.2683333333333333,
+        "answerable_declined": 0.18333333333333346,
+        "forced_correct_withheld": 0.17325800376647849,
+        "risk_ci_question_bootstrap": [
+          0.20121875,
+          0.3418906249999999
+        ]
+      },
+      "Prompt allows unanswerable": {
+        "n_total": 400,
+        "expected_released": 363.0,
+        "expected_errors": 188.0,
+        "coverage": 0.9075,
+        "risk": 0.5179063360881543,
+        "answerable_declined": 0.0,
+        "forced_correct_withheld": 0.0,
+        "risk_ci_question_bootstrap": [
+          0.46321021984994964,
+          0.5718157181571816
+        ]
+      },
+      "Answerability oracle (diagnostic only)": {
+        "n_total": 400,
+        "expected_released": 200.0,
+        "expected_errors": 23.0,
+        "coverage": 0.5,
+        "risk": 0.115,
+        "answerable_declined": 0.0,
+        "forced_correct_withheld": 0.0,
+        "risk_ci_question_bootstrap": [
+          0.07141950688905004,
+          0.16098347757671122
+        ]
+      },
+      "Random eligible gate (expected 50%)": {
+        "n_total": 400,
+        "expected_released": 199.99999999999994,
+        "expected_errors": 111.27819548872176,
+        "coverage": 0.49999999999999983,
+        "risk": 0.556390977443609,
+        "answerable_declined": 0.49874686716791994,
+        "forced_correct_withheld": 0.49874686716791994,
+        "risk_ci_question_bootstrap": [
+          0.5075,
+          0.6055276381909548
+        ]
+      }
+    },
+    "paired_differences_exploratory": [
+      {
+        "a": "Token probability gate",
+        "b": "Forced-answer prompt",
+        "risk_difference": -0.09639097744360897,
+        "ci": [
+          -0.14397368421052634,
+          -0.04997337092731838
+        ]
+      },
+      {
+        "a": "Token probability gate",
+        "b": "Random eligible gate (expected 50%)",
+        "risk_difference": -0.09639097744360897,
+        "ci": [
+          -0.14397368421052645,
+          -0.04997337092731838
+        ]
+      },
+      {
+        "a": "Token probability gate",
+        "b": "Verbalized confidence gate",
+        "risk_difference": 0.07090909090909098,
+        "ci": [
+          0.010444932256383434,
+          0.1302213596623455
+        ]
+      },
+      {
+        "a": "Token probability gate",
+        "b": "Sample agreement gate",
+        "risk_difference": 0.052274678111587924,
+        "ci": [
+          -0.0008777512839325296,
+          0.10333771929824553
+        ]
+      },
+      {
+        "a": "Token probability gate",
+        "b": "Lexical cluster entropy gate",
+        "risk_difference": 0.053073593073593106,
+        "ci": [
+          -0.0011169486899563082,
+          0.10424663587902114
+        ]
+      },
+      {
+        "a": "Token probability gate",
+        "b": "Context-sufficiency self-check gate",
+        "risk_difference": 0.1916666666666667,
+        "ci": [
+          0.13,
+          0.2500249999999999
+        ]
+      },
+      {
+        "a": "Verbalized confidence gate",
+        "b": "Forced-answer prompt",
+        "risk_difference": -0.16730006835269995,
+        "ci": [
+          -0.20814841098761197,
+          -0.12748137705374557
+        ]
+      },
+      {
+        "a": "Verbalized confidence gate",
+        "b": "Random eligible gate (expected 50%)",
+        "risk_difference": -0.16730006835269995,
+        "ci": [
+          -0.20814841098761208,
+          -0.12748137705374557
+        ]
+      },
+      {
+        "a": "Verbalized confidence gate",
+        "b": "Sample agreement gate",
+        "risk_difference": -0.018634412797503053,
+        "ci": [
+          -0.07030049479807277,
+          0.03087180085420602
+        ]
+      },
+      {
+        "a": "Verbalized confidence gate",
+        "b": "Lexical cluster entropy gate",
+        "risk_difference": -0.01783549783549787,
+        "ci": [
+          -0.06979710425856474,
+          0.032874371912442954
+        ]
+      },
+      {
+        "a": "Verbalized confidence gate",
+        "b": "Context-sufficiency self-check gate",
+        "risk_difference": 0.12075757575757573,
+        "ci": [
+          0.07094968749999998,
+          0.16957745332175414
+        ]
+      },
+      {
+        "a": "Sample agreement gate",
+        "b": "Forced-answer prompt",
+        "risk_difference": -0.1486656555551969,
+        "ci": [
+          -0.18924223046389452,
+          -0.10881112844183145
+        ]
+      },
+      {
+        "a": "Sample agreement gate",
+        "b": "Random eligible gate (expected 50%)",
+        "risk_difference": -0.1486656555551969,
+        "ci": [
+          -0.18924223046389452,
+          -0.10881112844183145
+        ]
+      },
+      {
+        "a": "Sample agreement gate",
+        "b": "Lexical cluster entropy gate",
+        "risk_difference": 0.0007989149620051816,
+        "ci": [
+          -0.009551551805837557,
+          0.011361457413077753
+        ]
+      },
+      {
+        "a": "Sample agreement gate",
+        "b": "Context-sufficiency self-check gate",
+        "risk_difference": 0.13939198855507878,
+        "ci": [
+          0.08279127989301449,
+          0.19635645129421062
+        ]
+      },
+      {
+        "a": "Lexical cluster entropy gate",
+        "b": "Forced-answer prompt",
+        "risk_difference": -0.14946457051720208,
+        "ci": [
+          -0.18988484077841658,
+          -0.10971919660358531
+        ]
+      },
+      {
+        "a": "Lexical cluster entropy gate",
+        "b": "Random eligible gate (expected 50%)",
+        "risk_difference": -0.14946457051720208,
+        "ci": [
+          -0.1898848407784167,
+          -0.10971919660358531
+        ]
+      },
+      {
+        "a": "Lexical cluster entropy gate",
+        "b": "Context-sufficiency self-check gate",
+        "risk_difference": 0.1385930735930736,
+        "ci": [
+          0.08265827922077922,
+          0.19616161622876993
+        ]
+      },
+      {
+        "a": "Context-sufficiency self-check gate",
+        "b": "Forced-answer prompt",
+        "risk_difference": -0.2880576441102757,
+        "ci": [
+          -0.3275013314536341,
+          -0.24781092964824122
+        ]
+      },
+      {
+        "a": "Context-sufficiency self-check gate",
+        "b": "Random eligible gate (expected 50%)",
+        "risk_difference": -0.2880576441102757,
+        "ci": [
+          -0.3275013314536341,
+          -0.24781092964824122
+        ]
+      }
+    ],
+    "held_out": {
+      "Token probability": {
+        "threshold": 0.9286958383119669,
+        "tie_release_probability": 1.0,
+        "calibration": {
+          "n_total": 200,
+          "expected_released": 100.0,
+          "expected_errors": 47.0,
+          "coverage": 0.5,
+          "risk": 0.47,
+          "answerable_declined": 0.43000000000000005,
+          "forced_correct_withheld": 0.4111111111111111
+        },
+        "test": {
+          "n_total": 200,
+          "expected_released": 98.0,
+          "expected_errors": 43.0,
+          "coverage": 0.49,
+          "risk": 0.4387755102040816,
+          "answerable_declined": 0.43000000000000005,
+          "forced_correct_withheld": 0.367816091954023
+        },
+        "test_risk_ci_conditional_on_calibrated_threshold": [
+          0.34480904708935856,
+          0.5405474351902924
+        ]
+      },
+      "Verbalized confidence": {
+        "threshold": 0.85,
+        "tie_release_probability": 0.35555555555555557,
+        "calibration": {
+          "n_total": 200,
+          "expected_released": 100.0,
+          "expected_errors": 38.17777777777777,
+          "coverage": 0.5,
+          "risk": 0.3817777777777777,
+          "answerable_declined": 0.336888888888889,
+          "forced_correct_withheld": 0.3130864197530864
+        },
+        "test": {
+          "n_total": 200,
+          "expected_released": 106.19999999999999,
+          "expected_errors": 43.02222222222222,
+          "coverage": 0.5309999999999999,
+          "risk": 0.40510567064239383,
+          "answerable_declined": 0.2904444444444445,
+          "forced_correct_withheld": 0.27381864623243923
+        },
+        "test_risk_ci_conditional_on_calibrated_threshold": [
+          0.3145015109436678,
+          0.4906487348321355
+        ]
+      },
+      "Sample agreement": {
+        "threshold": 1.0,
+        "tie_release_probability": 0.819672131147541,
+        "calibration": {
+          "n_total": 200,
+          "expected_released": 100.00000000000003,
+          "expected_errors": 44.262295081967224,
+          "coverage": 0.5000000000000001,
+          "risk": 0.4426229508196721,
+          "answerable_declined": 0.4262295081967211,
+          "forced_correct_withheld": 0.3806921675774133
+        },
+        "test": {
+          "n_total": 200,
+          "expected_released": 90.98360655737707,
+          "expected_errors": 33.606557377049185,
+          "coverage": 0.45491803278688536,
+          "risk": 0.3693693693693693,
+          "answerable_declined": 0.40163934426229486,
+          "forced_correct_withheld": 0.34049368758243803
+        },
+        "test_risk_ci_conditional_on_calibrated_threshold": [
+          0.2845491161333631,
+          0.45871559633027503
+        ]
+      },
+      "Lexical cluster entropy": {
+        "threshold": -0.0,
+        "tie_release_probability": 0.8333333333333334,
+        "calibration": {
+          "n_total": 200,
+          "expected_released": 100.0,
+          "expected_errors": 44.166666666666664,
+          "coverage": 0.5,
+          "risk": 0.44166666666666665,
+          "answerable_declined": 0.42500000000000004,
+          "forced_correct_withheld": 0.37962962962962965
+        },
+        "test": {
+          "n_total": 200,
+          "expected_released": 92.5,
+          "expected_errors": 34.166666666666664,
+          "coverage": 0.4625,
+          "risk": 0.36936936936936937,
+          "answerable_declined": 0.3916666666666667,
+          "forced_correct_withheld": 0.32950191570881227
+        },
+        "test_risk_ci_conditional_on_calibrated_threshold": [
+          0.2843137254901961,
+          0.45795366043613706
+        ]
+      },
+      "Context-sufficiency self-check": {
+        "threshold": 0.8902942538261414,
+        "tie_release_probability": 1.0,
+        "calibration": {
+          "n_total": 200,
+          "expected_released": 100.0,
+          "expected_errors": 25.0,
+          "coverage": 0.5,
+          "risk": 0.25,
+          "answerable_declined": 0.18999999999999995,
+          "forced_correct_withheld": 0.16666666666666663
+        },
+        "test": {
+          "n_total": 200,
+          "expected_released": 102.0,
+          "expected_errors": 29.0,
+          "coverage": 0.51,
+          "risk": 0.28431372549019607,
+          "answerable_declined": 0.16000000000000003,
+          "forced_correct_withheld": 0.16091954022988508
+        },
+        "test_risk_ci_conditional_on_calibrated_threshold": [
+          0.1919191919191919,
+          0.3711477055013228
+        ]
+      }
+    },
+    "ranking": {
+      "Token probability": {
+        "aurc_full": 0.4254922120730544,
+        "aurc_from_5_percent": 0.4408327544478491,
+        "max_coverage": 0.9975,
+        "auroc": 0.6585992772433451
+      },
+      "Verbalized confidence": {
+        "aurc_full": 0.41791676686877266,
+        "aurc_from_5_percent": 0.42017906483954043,
+        "max_coverage": 0.9975,
+        "auroc": 0.7209752125006363
+      },
+      "Sample agreement": {
+        "aurc_full": 0.439746206663328,
+        "aurc_from_5_percent": 0.4413472509020738,
+        "max_coverage": 0.9975,
+        "auroc": 0.6909324578816105
+      },
+      "Lexical cluster entropy": {
+        "aurc_full": 0.43870823039933776,
+        "aurc_from_5_percent": 0.44029732157298423,
+        "max_coverage": 0.9975,
+        "auroc": 0.6935664478037359
+      },
+      "Context-sufficiency self-check": {
+        "aurc_full": 0.30017430355898367,
+        "aurc_from_5_percent": 0.3084784406918179,
+        "max_coverage": 0.9975,
+        "auroc": 0.8557286099658981
+      }
+    },
+    "verbal_ece": 0.3090225563909774,
+    "verbal_bins": [
+      {
+        "bin": 0,
+        "count": 86,
+        "mean_confidence": 0.0,
+        "accuracy": 0.10465116279069768
+      },
+      {
+        "bin": 1,
+        "count": 6,
+        "mean_confidence": 0.09999999999999999,
+        "accuracy": 0.16666666666666666
+      },
+      {
+        "bin": 2,
+        "count": 5,
+        "mean_confidence": 0.2,
+        "accuracy": 0.2
+      },
+      {
+        "bin": 8,
+        "count": 131,
+        "mean_confidence": 0.8377862595419846,
+        "accuracy": 0.4351145038167939
+      },
+      {
+        "bin": 9,
+        "count": 171,
+        "mean_confidence": 0.9950292397660819,
+        "accuracy": 0.6374269005847953
+      }
+    ],
+    "ambiguous": [
+      {
+        "id": "a01",
+        "question": "Which room is the workshop in?",
+        "forced": "Room 204",
+        "reading_picked": "A",
+        "original_entropy": 0.0,
+        "pooled_total": 1.0,
+        "within": 0.0,
+        "between": 1.0,
+        "clarified_correct": 2,
+        "gates": {
+          "Token probability": {
+            "old_full_sample_all_ties_release": true,
+            "full_sample_randomized_release_probability": 1.0,
+            "calibration_only_release_probability": 1.0
+          },
+          "Verbalized confidence": {
+            "old_full_sample_all_ties_release": false,
+            "full_sample_randomized_release_probability": 0.0,
+            "calibration_only_release_probability": 0.0
+          },
+          "Sample agreement": {
+            "old_full_sample_all_ties_release": true,
+            "full_sample_randomized_release_probability": 0.8583690987124464,
+            "calibration_only_release_probability": 0.819672131147541
+          },
+          "Lexical cluster entropy": {
+            "old_full_sample_all_ties_release": true,
+            "full_sample_randomized_release_probability": 0.8658008658008658,
+            "calibration_only_release_probability": 0.8333333333333334
+          },
+          "Context-sufficiency self-check": {
+            "old_full_sample_all_ties_release": true,
+            "full_sample_randomized_release_probability": 1.0,
+            "calibration_only_release_probability": 1.0
+          }
+        }
+      },
+      {
+        "id": "a02",
+        "question": "What time does the workshop start?",
+        "forced": "Friday 14:00",
+        "reading_picked": "A",
+        "original_entropy": 0.0,
+        "pooled_total": 1.0,
+        "within": 0.0,
+        "between": 1.0,
+        "clarified_correct": 2,
+        "gates": {
+          "Token probability": {
+            "old_full_sample_all_ties_release": false,
+            "full_sample_randomized_release_probability": 0.0,
+            "calibration_only_release_probability": 0.0
+          },
+          "Verbalized confidence": {
+            "old_full_sample_all_ties_release": true,
+            "full_sample_randomized_release_probability": 1.0,
+            "calibration_only_release_probability": 1.0
+          },
+          "Sample agreement": {
+            "old_full_sample_all_ties_release": true,
+            "full_sample_randomized_release_probability": 0.8583690987124464,
+            "calibration_only_release_probability": 0.819672131147541
+          },
+          "Lexical cluster entropy": {
+            "old_full_sample_all_ties_release": true,
+            "full_sample_randomized_release_probability": 0.8658008658008658,
+            "calibration_only_release_probability": 0.8333333333333334
+          },
+          "Context-sufficiency self-check": {
+            "old_full_sample_all_ties_release": true,
+            "full_sample_randomized_release_probability": 1.0,
+            "calibration_only_release_probability": 1.0
+          }
+        }
+      },
+      {
+        "id": "a03",
+        "question": "What time does the library open?",
+        "forced": "North Library opens at 09:00",
+        "reading_picked": "A",
+        "original_entropy": 0.4689955935892812,
+        "pooled_total": 1.0,
+        "within": 0.0,
+        "between": 1.0,
+        "clarified_correct": 2,
+        "gates": {
+          "Token probability": {
+            "old_full_sample_all_ties_release": true,
+            "full_sample_randomized_release_probability": 1.0,
+            "calibration_only_release_probability": 1.0
+          },
+          "Verbalized confidence": {
+            "old_full_sample_all_ties_release": true,
+            "full_sample_randomized_release_probability": 1.0,
+            "calibration_only_release_probability": 1.0
+          },
+          "Sample agreement": {
+            "old_full_sample_all_ties_release": false,
+            "full_sample_randomized_release_probability": 0.0,
+            "calibration_only_release_probability": 0.0
+          },
+          "Lexical cluster entropy": {
+            "old_full_sample_all_ties_release": false,
+            "full_sample_randomized_release_probability": 0.0,
+            "calibration_only_release_probability": 0.0
+          },
+          "Context-sufficiency self-check": {
+            "old_full_sample_all_ties_release": true,
+            "full_sample_randomized_release_probability": 1.0,
+            "calibration_only_release_probability": 1.0
+          }
+        }
+      },
+      {
+        "id": "a04",
+        "question": "Which platform does the train to Pittsburgh leave from?",
+        "forced": "platform 3",
+        "reading_picked": "A",
+        "original_entropy": 0.0,
+        "pooled_total": 1.0,
+        "within": 0.0,
+        "between": 1.0,
+        "clarified_correct": 2,
+        "gates": {
+          "Token probability": {
+            "old_full_sample_all_ties_release": true,
+            "full_sample_randomized_release_probability": 1.0,
+            "calibration_only_release_probability": 1.0
+          },
+          "Verbalized confidence": {
+            "old_full_sample_all_ties_release": false,
+            "full_sample_randomized_release_probability": 0.0,
+            "calibration_only_release_probability": 0.0
+          },
+          "Sample agreement": {
+            "old_full_sample_all_ties_release": true,
+            "full_sample_randomized_release_probability": 0.8583690987124464,
+            "calibration_only_release_probability": 0.819672131147541
+          },
+          "Lexical cluster entropy": {
+            "old_full_sample_all_ties_release": true,
+            "full_sample_randomized_release_probability": 0.8658008658008658,
+            "calibration_only_release_probability": 0.8333333333333334
+          },
+          "Context-sufficiency self-check": {
+            "old_full_sample_all_ties_release": true,
+            "full_sample_randomized_release_probability": 1.0,
+            "calibration_only_release_probability": 1.0
+          }
+        }
+      },
+      {
+        "id": "a05",
+        "question": "When is the midterm?",
+        "forced": "October 14",
+        "reading_picked": "A",
+        "original_entropy": 1.8464393446710154,
+        "pooled_total": 1.2344977967946407,
+        "within": 0.2344977967946406,
+        "between": 1.0,
+        "clarified_correct": 2,
+        "gates": {
+          "Token probability": {
+            "old_full_sample_all_ties_release": true,
+            "full_sample_randomized_release_probability": 1.0,
+            "calibration_only_release_probability": 1.0
+          },
+          "Verbalized confidence": {
+            "old_full_sample_all_ties_release": false,
+            "full_sample_randomized_release_probability": 0.0,
+            "calibration_only_release_probability": 0.0
+          },
+          "Sample agreement": {
+            "old_full_sample_all_ties_release": false,
+            "full_sample_randomized_release_probability": 0.0,
+            "calibration_only_release_probability": 0.0
+          },
+          "Lexical cluster entropy": {
+            "old_full_sample_all_ties_release": false,
+            "full_sample_randomized_release_probability": 0.0,
+            "calibration_only_release_probability": 0.0
+          },
+          "Context-sufficiency self-check": {
+            "old_full_sample_all_ties_release": false,
+            "full_sample_randomized_release_probability": 0.0,
+            "calibration_only_release_probability": 0.0
+          }
+        }
+      },
+      {
+        "id": "a06",
+        "question": "What day are office hours held?",
+        "forced": "Tuesday",
+        "reading_picked": "A",
+        "original_entropy": 0.4689955935892812,
+        "pooled_total": 1.0,
+        "within": 0.0,
+        "between": 1.0,
+        "clarified_correct": 2,
+        "gates": {
+          "Token probability": {
+            "old_full_sample_all_ties_release": true,
+            "full_sample_randomized_release_probability": 1.0,
+            "calibration_only_release_probability": 1.0
+          },
+          "Verbalized confidence": {
+            "old_full_sample_all_ties_release": true,
+            "full_sample_randomized_release_probability": 1.0,
+            "calibration_only_release_probability": 1.0
+          },
+          "Sample agreement": {
+            "old_full_sample_all_ties_release": false,
+            "full_sample_randomized_release_probability": 0.0,
+            "calibration_only_release_probability": 0.0
+          },
+          "Lexical cluster entropy": {
+            "old_full_sample_all_ties_release": false,
+            "full_sample_randomized_release_probability": 0.0,
+            "calibration_only_release_probability": 0.0
+          },
+          "Context-sufficiency self-check": {
+            "old_full_sample_all_ties_release": false,
+            "full_sample_randomized_release_probability": 0.0,
+            "calibration_only_release_probability": 0.0
+          }
+        }
+      },
+      {
+        "id": "a07",
+        "question": "How often does the bus run on weekdays?",
+        "forced": "15 minutes",
+        "reading_picked": "A",
+        "original_entropy": 1.1567796494470395,
+        "pooled_total": 1.0,
+        "within": 0.0,
+        "between": 1.0,
+        "clarified_correct": 2,
+        "gates": {
+          "Token probability": {
+            "old_full_sample_all_ties_release": false,
+            "full_sample_randomized_release_probability": 0.0,
+            "calibration_only_release_probability": 0.0
+          },
+          "Verbalized confidence": {
+            "old_full_sample_all_ties_release": false,
+            "full_sample_randomized_release_probability": 0.0,
+            "calibration_only_release_probability": 0.0
+          },
+          "Sample agreement": {
+            "old_full_sample_all_ties_release": false,
+            "full_sample_randomized_release_probability": 0.0,
+            "calibration_only_release_probability": 0.0
+          },
+          "Lexical cluster entropy": {
+            "old_full_sample_all_ties_release": false,
+            "full_sample_randomized_release_probability": 0.0,
+            "calibration_only_release_probability": 0.0
+          },
+          "Context-sufficiency self-check": {
+            "old_full_sample_all_ties_release": true,
+            "full_sample_randomized_release_probability": 1.0,
+            "calibration_only_release_probability": 1.0
+          }
+        }
+      },
+      {
+        "id": "a08",
+        "question": "How much does a ticket for the concert cost?",
+        "forced": "$14",
+        "reading_picked": "B",
+        "original_entropy": 0.0,
+        "pooled_total": 1.0,
+        "within": 0.0,
+        "between": 1.0,
+        "clarified_correct": 2,
+        "gates": {
+          "Token probability": {
+            "old_full_sample_all_ties_release": true,
+            "full_sample_randomized_release_probability": 1.0,
+            "calibration_only_release_probability": 1.0
+          },
+          "Verbalized confidence": {
+            "old_full_sample_all_ties_release": true,
+            "full_sample_randomized_release_probability": 1.0,
+            "calibration_only_release_probability": 1.0
+          },
+          "Sample agreement": {
+            "old_full_sample_all_ties_release": true,
+            "full_sample_randomized_release_probability": 0.8583690987124464,
+            "calibration_only_release_probability": 0.819672131147541
+          },
+          "Lexical cluster entropy": {
+            "old_full_sample_all_ties_release": true,
+            "full_sample_randomized_release_probability": 0.8658008658008658,
+            "calibration_only_release_probability": 0.8333333333333334
+          },
+          "Context-sufficiency self-check": {
+            "old_full_sample_all_ties_release": false,
+            "full_sample_randomized_release_probability": 0.0,
+            "calibration_only_release_probability": 0.0
+          }
+        }
+      },
+      {
+        "id": "a09",
+        "question": "When is the deadline?",
+        "forced": "September 20 and December 12",
+        "reading_picked": "both",
+        "original_entropy": 0.8812908992306927,
+        "pooled_total": 1.0,
+        "within": 0.0,
+        "between": 1.0,
+        "clarified_correct": 2,
+        "gates": {
+          "Token probability": {
+            "old_full_sample_all_ties_release": true,
+            "full_sample_randomized_release_probability": 1.0,
+            "calibration_only_release_probability": 1.0
+          },
+          "Verbalized confidence": {
+            "old_full_sample_all_ties_release": true,
+            "full_sample_randomized_release_probability": 1.0,
+            "calibration_only_release_probability": 1.0
+          },
+          "Sample agreement": {
+            "old_full_sample_all_ties_release": false,
+            "full_sample_randomized_release_probability": 0.0,
+            "calibration_only_release_probability": 0.0
+          },
+          "Lexical cluster entropy": {
+            "old_full_sample_all_ties_release": false,
+            "full_sample_randomized_release_probability": 0.0,
+            "calibration_only_release_probability": 0.0
+          },
+          "Context-sufficiency self-check": {
+            "old_full_sample_all_ties_release": true,
+            "full_sample_randomized_release_probability": 1.0,
+            "calibration_only_release_probability": 1.0
+          }
+        }
+      },
+      {
+        "id": "a10",
+        "question": "What time does the caf\u00e9 close?",
+        "forced": "6 pm",
+        "reading_picked": "A",
+        "original_entropy": 0.0,
+        "pooled_total": 1.0,
+        "within": 0.0,
+        "between": 1.0,
+        "clarified_correct": 2,
+        "gates": {
+          "Token probability": {
+            "old_full_sample_all_ties_release": true,
+            "full_sample_randomized_release_probability": 1.0,
+            "calibration_only_release_probability": 1.0
+          },
+          "Verbalized confidence": {
+            "old_full_sample_all_ties_release": true,
+            "full_sample_randomized_release_probability": 1.0,
+            "calibration_only_release_probability": 1.0
+          },
+          "Sample agreement": {
+            "old_full_sample_all_ties_release": true,
+            "full_sample_randomized_release_probability": 0.8583690987124464,
+            "calibration_only_release_probability": 0.819672131147541
+          },
+          "Lexical cluster entropy": {
+            "old_full_sample_all_ties_release": true,
+            "full_sample_randomized_release_probability": 0.8658008658008658,
+            "calibration_only_release_probability": 0.8333333333333334
+          },
+          "Context-sufficiency self-check": {
+            "old_full_sample_all_ties_release": true,
+            "full_sample_randomized_release_probability": 1.0,
+            "calibration_only_release_probability": 1.0
+          }
+        }
+      },
+      {
+        "id": "a11",
+        "question": "How much does parking cost?",
+        "forced": "$2 per hour",
+        "reading_picked": "A",
+        "original_entropy": 2.170950594454669,
+        "pooled_total": 1.0,
+        "within": 0.0,
+        "between": 1.0,
+        "clarified_correct": 2,
+        "gates": {
+          "Token probability": {
+            "old_full_sample_all_ties_release": false,
+            "full_sample_randomized_release_probability": 0.0,
+            "calibration_only_release_probability": 0.0
+          },
+          "Verbalized confidence": {
+            "old_full_sample_all_ties_release": false,
+            "full_sample_randomized_release_probability": 0.0,
+            "calibration_only_release_probability": 0.0
+          },
+          "Sample agreement": {
+            "old_full_sample_all_ties_release": false,
+            "full_sample_randomized_release_probability": 0.0,
+            "calibration_only_release_probability": 0.0
+          },
+          "Lexical cluster entropy": {
+            "old_full_sample_all_ties_release": false,
+            "full_sample_randomized_release_probability": 0.0,
+            "calibration_only_release_probability": 0.0
+          },
+          "Context-sufficiency self-check": {
+            "old_full_sample_all_ties_release": false,
+            "full_sample_randomized_release_probability": 0.0,
+            "calibration_only_release_probability": 0.0
+          }
+        }
+      },
+      {
+        "id": "a12",
+        "question": "Where is the meeting?",
+        "forced": "Room 4B",
+        "reading_picked": "A",
+        "original_entropy": 1.295461844238322,
+        "pooled_total": 1.0,
+        "within": 0.0,
+        "between": 1.0,
+        "clarified_correct": 2,
+        "gates": {
+          "Token probability": {
+            "old_full_sample_all_ties_release": true,
+            "full_sample_randomized_release_probability": 1.0,
+            "calibration_only_release_probability": 1.0
+          },
+          "Verbalized confidence": {
+            "old_full_sample_all_ties_release": true,
+            "full_sample_randomized_release_probability": 1.0,
+            "calibration_only_release_probability": 1.0
+          },
+          "Sample agreement": {
+            "old_full_sample_all_ties_release": false,
+            "full_sample_randomized_release_probability": 0.0,
+            "calibration_only_release_probability": 0.0
+          },
+          "Lexical cluster entropy": {
+            "old_full_sample_all_ties_release": false,
+            "full_sample_randomized_release_probability": 0.0,
+            "calibration_only_release_probability": 0.0
+          },
+          "Context-sufficiency self-check": {
+            "old_full_sample_all_ties_release": true,
+            "full_sample_randomized_release_probability": 1.0,
+            "calibration_only_release_probability": 1.0
+          }
+        }
+      }
+    ],
+    "base_counts": {
+      "n_total": 400,
+      "released": 399,
+      "wrong_released": 222,
+      "answerable": 200,
+      "correct_answerable": 177,
+      "exact_match_answerable": 150,
+      "spontaneous_declines": [
+        {
+          "id": "5ad40639604f3c001a3ffe4c",
+          "answer": "None"
+        }
+      ],
+      "prompt_abstain_released": 363,
+      "prompt_abstain_wrong_released": 188,
+      "prompt_abstain_correct": 175
+    },
+    "exact_match_policies": {
+      "Forced-answer prompt": {
+        "n_total": 400,
+        "expected_released": 399.0,
+        "expected_errors": 249.0,
+        "coverage": 0.9975,
+        "risk": 0.6240601503759399,
+        "answerable_declined": 0.0,
+        "forced_correct_withheld": 0.0
+      },
+      "Token probability gate": {
+        "n_total": 400,
+        "expected_released": 200.0,
+        "expected_errors": 102.0,
+        "coverage": 0.5,
+        "risk": 0.51,
+        "answerable_declined": 0.43000000000000005,
+        "forced_correct_withheld": 0.3466666666666667
+      },
+      "Verbalized confidence gate": {
+        "n_total": 400,
+        "expected_released": 200.0,
+        "expected_errors": 93.45454545454545,
+        "coverage": 0.5,
+        "risk": 0.4672727272727273,
+        "answerable_declined": 0.33151515151515154,
+        "forced_correct_withheld": 0.2896969696969698
+      },
+      "Sample agreement gate": {
+        "n_total": 400,
+        "expected_released": 199.99999999999994,
+        "expected_errors": 97.85407725321888,
+        "coverage": 0.49999999999999983,
+        "risk": 0.48927038626609454,
+        "answerable_declined": 0.386266094420601,
+        "forced_correct_withheld": 0.31902718168812616
+      },
+      "Lexical cluster entropy gate": {
+        "n_total": 400,
+        "expected_released": 200.0,
+        "expected_errors": 96.96969696969697,
+        "coverage": 0.5,
+        "risk": 0.48484848484848486,
+        "answerable_declined": 0.3852813852813852,
+        "forced_correct_withheld": 0.31313131313131315
+      },
+      "Context-sufficiency self-check gate": {
+        "n_total": 400,
+        "expected_released": 200.0,
+        "expected_errors": 75.33333333333333,
+        "coverage": 0.5,
+        "risk": 0.37666666666666665,
+        "answerable_declined": 0.18333333333333346,
+        "forced_correct_withheld": 0.16888888888888898
+      },
+      "Prompt allows unanswerable": {
+        "n_total": 400,
+        "expected_released": 363.0,
+        "expected_errors": 216.0,
+        "coverage": 0.9075,
+        "risk": 0.5950413223140496,
+        "answerable_declined": 0.0,
+        "forced_correct_withheld": 0.0
+      },
+      "Answerability oracle (diagnostic only)": {
+        "n_total": 400,
+        "expected_released": 200.0,
+        "expected_errors": 50.0,
+        "coverage": 0.5,
+        "risk": 0.25,
+        "answerable_declined": 0.0,
+        "forced_correct_withheld": 0.0
+      },
+      "Random eligible gate (expected 50%)": {
+        "n_total": 400,
+        "expected_released": 199.99999999999994,
+        "expected_errors": 124.81203007518792,
+        "coverage": 0.49999999999999983,
+        "risk": 0.6240601503759398,
+        "answerable_declined": 0.49874686716791994,
+        "forced_correct_withheld": 0.4987468671679198
+      }
+    }
+  },
+  "legacy_point_sensitivity": {
+    "Forced-answer prompt": {
+      "n_total": 400,
+      "expected_released": 399.0,
+      "expected_errors": 222.0,
+      "coverage": 0.9975,
+      "risk": 0.556390977443609,
+      "answerable_declined": 0.0,
+      "forced_correct_withheld": 0.0
+    },
+    "Token probability gate": {
+      "n_total": 400,
+      "expected_released": 200.0,
+      "expected_errors": 92.0,
+      "coverage": 0.5,
+      "risk": 0.46,
+      "answerable_declined": 0.43000000000000005,
+      "forced_correct_withheld": 0.38983050847457623
+    },
+    "Verbalized confidence gate": {
+      "n_total": 400,
+      "expected_released": 200.0,
+      "expected_errors": 77.81818181818181,
+      "coverage": 0.5,
+      "risk": 0.38909090909090904,
+      "answerable_declined": 0.33151515151515154,
+      "forced_correct_withheld": 0.3097072419106318
+    },
+    "Sample agreement gate": {
+      "n_total": 400,
+      "expected_released": 199.99999999999997,
+      "expected_errors": 83.19327731092437,
+      "coverage": 0.49999999999999994,
+      "risk": 0.4159663865546219,
+      "answerable_declined": 0.39495798319327735,
+      "forced_correct_withheld": 0.34007501305607
+    },
+    "Lexical cluster entropy gate": {
+      "n_total": 400,
+      "expected_released": 199.99999999999994,
+      "expected_errors": 83.0508474576271,
+      "coverage": 0.49999999999999983,
+      "risk": 0.4152542372881356,
+      "answerable_declined": 0.39406779661016966,
+      "forced_correct_withheld": 0.33927032461936246
+    },
+    "Context-sufficiency self-check gate": {
+      "n_total": 400,
+      "expected_released": 200.0,
+      "expected_errors": 53.666666666666664,
+      "coverage": 0.5,
+      "risk": 0.2683333333333333,
+      "answerable_declined": 0.18333333333333346,
+      "forced_correct_withheld": 0.17325800376647849
+    },
+    "Prompt allows unanswerable": {
+      "n_total": 400,
+      "expected_released": 363.0,
+      "expected_errors": 188.0,
+      "coverage": 0.9075,
+      "risk": 0.5179063360881543,
+      "answerable_declined": 0.0,
+      "forced_correct_withheld": 0.0
+    },
+    "Answerability oracle (diagnostic only)": {
+      "n_total": 400,
+      "expected_released": 200.0,
+      "expected_errors": 23.0,
+      "coverage": 0.5,
+      "risk": 0.115,
+      "answerable_declined": 0.0,
+      "forced_correct_withheld": 0.0
+    },
+    "Random eligible gate (expected 50%)": {
+      "n_total": 400,
+      "expected_released": 199.99999999999994,
+      "expected_errors": 111.27819548872176,
+      "coverage": 0.49999999999999983,
+      "risk": 0.556390977443609,
+      "answerable_declined": 0.49874686716791994,
+      "forced_correct_withheld": 0.49874686716791994
+    }
+  }
+}

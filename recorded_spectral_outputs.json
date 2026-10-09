@@ -1,0 +1,175 @@
+{
+  "source_notebook_sha256": "e0f5c1f46068bbd41e231ed1e68a696c724cba1f01ac148fcd3170b3d224afc7",
+  "source_cell": 35,
+  "status": "Recorded exploratory output; embeddings/Gram matrices were not cached, so not independently recomputed here.",
+  "rows": [
+    {
+      "id": "a01",
+      "gamma": 1.0,
+      "total": 0.489,
+      "within": -0.0,
+      "between": 0.489
+    },
+    {
+      "id": "a01",
+      "gamma": 10.0,
+      "total": 0.994,
+      "within": -0.0,
+      "between": 0.994
+    },
+    {
+      "id": "a02",
+      "gamma": 1.0,
+      "total": 1.103,
+      "within": 0.484,
+      "between": 0.619
+    },
+    {
+      "id": "a02",
+      "gamma": 10.0,
+      "total": 1.581,
+      "within": 0.595,
+      "between": 0.985
+    },
+    {
+      "id": "a03",
+      "gamma": 1.0,
+      "total": 0.638,
+      "within": -0.0,
+      "between": 0.638
+    },
+    {
+      "id": "a03",
+      "gamma": 10.0,
+      "total": 1.0,
+      "within": -0.0,
+      "between": 1.0
+    },
+    {
+      "id": "a04",
+      "gamma": 1.0,
+      "total": 0.606,
+      "within": -0.0,
+      "between": 0.606
+    },
+    {
+      "id": "a04",
+      "gamma": 10.0,
+      "total": 0.999,
+      "within": -0.0,
+      "between": 0.999
+    },
+    {
+      "id": "a05",
+      "gamma": 1.0,
+      "total": 0.827,
+      "within": 0.179,
+      "between": 0.647
+    },
+    {
+      "id": "a05",
+      "gamma": 10.0,
+      "total": 1.2,
+      "within": 0.234,
+      "between": 0.966
+    },
+    {
+      "id": "a06",
+      "gamma": 1.0,
+      "total": 0.56,
+      "within": -0.0,
+      "between": 0.56
+    },
+    {
+      "id": "a06",
+      "gamma": 10.0,
+      "total": 0.998,
+      "within": -0.0,
+      "between": 0.998
+    },
+    {
+      "id": "a07",
+      "gamma": 1.0,
+      "total": 0.99,
+      "within": 0.446,
+      "between": 0.544
+    },
+    {
+      "id": "a07",
+      "gamma": 10.0,
+      "total": 1.472,
+      "within": 0.485,
+      "between": 0.987
+    },
+    {
+      "id": "a08",
+      "gamma": 1.0,
+      "total": 0.95,
+      "within": 0.2,
+      "between": 0.749
+    },
+    {
+      "id": "a08",
+      "gamma": 10.0,
+      "total": 1.234,
+      "within": 0.234,
+      "between": 1.0
+    },
+    {
+      "id": "a09",
+      "gamma": 1.0,
+      "total": 0.708,
+      "within": -0.0,
+      "between": 0.708
+    },
+    {
+      "id": "a09",
+      "gamma": 10.0,
+      "total": 1.0,
+      "within": -0.0,
+      "between": 1.0
+    },
+    {
+      "id": "a10",
+      "gamma": 1.0,
+      "total": 0.408,
+      "within": -0.0,
+      "between": 0.408
+    },
+    {
+      "id": "a10",
+      "gamma": 10.0,
+      "total": 0.979,
+      "within": -0.0,
+      "between": 0.979
+    },
+    {
+      "id": "a11",
+      "gamma": 1.0,
+      "total": 1.361,
+      "within": 0.614,
+      "between": 0.747
+    },
+    {
+      "id": "a11",
+      "gamma": 10.0,
+      "total": 1.734,
+      "within": 0.734,
+      "between": 1.0
+    },
+    {
+      "id": "a12",
+      "gamma": 1.0,
+      "total": 0.45,
+      "within": -0.0,
+      "between": 0.45
+    },
+    {
+      "id": "a12",
+      "gamma": 10.0,
+      "total": 0.989,
+      "within": -0.0,
+      "between": 0.989
+    }
+  ]
+}

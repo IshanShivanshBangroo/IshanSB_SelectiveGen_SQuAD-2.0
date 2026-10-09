@@ -1,0 +1,10 @@
+Policy,Released / 400 (expected),Coverage,Wrong count (expected),Wrong among released · F1 ≥ .5,95% question bootstrap,Forced-correct answers withheld
+Forced-answer prompt,399.0,99.75%,222.0,55.64%,"[50.75%, 60.55%]",0.00%
+Token probability gate,200.0,50.00%,92.0,46.00%,"[39.00%, 53.00%]",38.98%
+Verbalized confidence gate,200.0,50.00%,77.818,38.91%,"[32.09%, 45.40%]",30.97%
+Sample agreement gate,200.0,50.00%,81.545,40.77%,"[34.45%, 47.09%]",33.08%
+Lexical cluster entropy gate,200.0,50.00%,81.385,40.69%,"[34.31%, 47.06%]",32.99%
+Context-sufficiency self-check gate,200.0,50.00%,53.667,26.83%,"[20.12%, 34.19%]",17.33%
+Prompt allows unanswerable,363.0,90.75%,188.0,51.79%,"[46.32%, 57.18%]",N/A (different answers)
+Answerability oracle (diagnostic only),200.0,50.00%,23.0,11.50%,"[7.14%, 16.10%]",0.00%
+Random eligible gate (expected 50%),200.0,50.00%,111.278,55.64%,"[50.75%, 60.55%]",49.87%
